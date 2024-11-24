@@ -1,0 +1,140 @@
+/* Universal Selector which styles all elements */
+*{
+	padding: 0; /* Padding of the elemtns is 0 */
+	margin: 0; /* Margin of the elemtns is 0 */
+	box-sizing: border-box; /* It takes note of the width and height that i apply for padding and margins */
+}
+
+
+/* Styles the homepage, which is used by body */
+body{
+	background-color:#e1dcd6; /* Background colour of the homepage */
+	width: 1280px; /* Width of the page "1280" (PIXELS) */
+	height: 1920px; /* Height of the page "1920" (PIXELS) */
+	left: -720px; /* Position the page left by "-720" (PIXELS) */
+	top: -512px; /* Position the page left by "-512" (PIXELS) */
+}
+
+
+
+/* Styles the header (Navigation box) by linking to html file "navigation-bar"*/
+.navigation-bar{
+	background-color: yellow; /* Background colour of navigation box */
+	display: flex; /* Display: "Flex" sets all the elements that's inside navigation box flexible length */
+	color: black; /* Colour of the navigation text */
+	width:1500px; /* Width of navigation box "1500" (PIXELS) */
+	height:140px; /* Height of navigation box "140" (PIXELS) */
+	left: 0px; /*Position  left of the navigation box */
+	top: 0px; /*Position  top of the navigation box */
+}
+
+
+
+/* Styles the header (Navigation box) hyperlink*/
+.navigation-bar a{
+	color: black; /* Colour of the link in the navigation text*/
+	width: 100px; /* Width of the link in the navigation text 100 (PIXELS)*/
+	padding: 25px 20px; /* Uses padding to space the text between the content and border*/
+	margin-left: none; /* Does not move the elements left*/
+}
+
+
+/* Styles the "Foods" navigation text, which is a class name of the "foods" navigation text*/
+.foods{
+	position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+	text-decoration: none; /* text-decoration is a decoration (style) of the text, which is set none  */
+	width: 116px; /* Width of "116" (PIXELS)*/
+	height: 48px; /* Height of "48" (PIXELS)*/
+	left: 995px; /*Position  left of the "Foods" text "995" (PIXELS) */
+	top: 39px; /*Position  top of the "Foods" text "39" (PIXELS) */
+	font-size: 30px; /*Size of the text "30" (PIXELS) */
+	cursor: pointer;  /*Cursor: "Pointer" is an action of the mouse pointer */
+	font-family: Tahoma, serif ; /*Font text of "Foods" is Tahoma, serif*/
+
+}
+
+
+/* When the pointer lands on "Foods" text, it styles the text*/
+.foods:hover{ 
+	color:red; /*When the pointer lands on "Foods" it changes colour to red */
+}
+
+
+/* Styles the "ContactUs" navigation text, which is a class name of the "contact-us" navigation text*/
+.contact-us{
+	position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+	text-decoration: none; /* text-decoration is a decoration (style) of the text, which is set none  */
+	width: 356px; /* Width of "356" (PIXELS)*/
+	height: 38px; /* Height of "38" (PIXELS)*/
+	left: 1125px; /*Position  left of the "ContactUs" text "1125" (PIXELS) */
+	top: 39px; /*Position  top of the "ContactUs" text "39" (PIXELS) */
+	font-size: 30px; /*Size of the text "30" (PIXELS) */
+	cursor: pointer; /*Cursor: "Pointer" is an action of the mouse pointer */
+	font-family: Tahoma, serif ; /*Font text of "ContactUs" is Tahoma, serif*/
+}
+
+
+/* When the pointer lands on "ContactUs" text, it styles the text*/
+.contact-us:hover{  
+	color:red; /*When the pointer lands on "ContactUs" it changes colour to red */
+}
+
+
+/* Styles the Yasmeen Cooking Logo, which is a ID name of the "yasmeen-cooking-logo"*/
+#yasmeen-cooking-logo{
+	position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+	width: 618px; /* Width of "618" (PIXELS)*/
+	height: 53px; /* Height of "53" (PIXELS)*/
+	left: 0px; /*Position  left of the Logo  "0" (PIXELS) */
+	top: 49px; /*Position  top of the Logo  "49" (PIXELS) */
+	font-size: 40px; /*Size of the Logo "30" (PIXELS) */
+	margin-right: none; /* Does not move the elements right*/
+}
+
+
+
+
+/* Styles the Account icon, which is a ID name of the "account"*/
+#account{
+	position:absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+	width:53px; /* Width of "53" (PIXELS)*/
+	height:69px; /* Height of "69" (PIXELS)*/
+	left: 1325px; /*Position  left of the Account icon  "1325" (PIXELS) */
+	top: 29px; /*Position  top of the Account icon  "29" (PIXELS) */
+}
+
+
+/* Styles the Search box, which is a ID name of the "searchBox"*/
+#searchBox{
+	position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+	width: 402px; /* Width of "402" (PIXELS)*/
+	height: 58px; /* Height of "58" (PIXELS)*/
+	left: 395px; /*Position  left of the Search box  "395" (PIXELS) */
+	top: 200px; /*Position  top of the Search box  "200" (PIXELS) */
+	
+}
+
+
+
+/* Styles the back icon by linking to ID back */
+#back{
+	position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+	width: 201.01px; /* Width of "116" (PIXELS)*/
+	height: 91px; /* Height of "91" (PIXELS)*/
+	left: 108.88px; /*Position  left of the back icon  "108.88" (PIXELS) */
+	top: 180.29px; /*Position  top of the back icon  "180.29" (PIXELS) */
+	transform: rotate(-179.84deg); /*Rotates the back icon to -179.84 degrees */
+}
+	
+	
+/* Styles the foraward icon by linking to ID forward */
+#forward{
+	position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+	width: 232px; /* Width of "232" (PIXELS)*/
+	height: 91px; /* Height of "91" (PIXELS)*/
+	left: 1017.31px; /*Position  left of the back icon  "1017.31" (PIXELS) */
+	top: 184.21px; /*Position  top of the back icon  "180.29" (PIXELS) */
+	transform: rotate(179.61deg); /*Rotates the back icon to -179.61 degrees */
+	
+}
+	

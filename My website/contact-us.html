@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="CSS/header.css"> <!--Links to CSS file named header.css, which creates a header-->
+    <link rel="stylesheet" href="CSS/footer.css"> <!--Links to CSS file named footer.css, which creates a footer-->
+    <meta charset="UTF-8"> <!-- display characters from several languages accurately since the character encoding has been set to UTF-8.--> 
+	            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this code helps by making sure the website is shown accurately and ideally on various devices, with the necessary scaling and sizing.-->
+    <title>Contact Page</title> <!--This title will appear in the task bar("Contact Page")-->
+</head>
+
+
+<body>
+
+	<!--It uses SECTION to organise and display the header code-->
+        <!--............................................................ -->
+        <section>
+            <div class="navigation-bar">   <!--This collects all the elements that will be included in the header -->
+                <a href="homePage.html"> <img src="LOGO/logo.jpg" id="yasmeen-cooking-logo"> </a> <!--Adds the logo -->
+                <a class="contact-us" href="contact-us.html">ContactUs</a> <!--Adds Contact Us Navigation button -->
+                <a class="foods" href="foods.html">Foods</a>  <!--Adds Foods Navigation button -->
+				<a href="login.php"> <img src="HP/account.png" id="account"></a>  <!--Adds the account icon-->
+            </div>
+                
+
+            <!-- THIS SECTION INSERT THE SEARCH BOX <-->
+            <div class="search"> <!--Collects all the elements that creates search box-->
+                <input type="search" id= "searchBox" onchange="openPage()" value="" placeholder="Search.." > <!--Adds search box. Also use "oncharge" to perform action when string is inserted-->
+                <a href="homePage.html"> <img src="HP/right-arrow.png" id="back"></a>  <!--Adds the back arrow-->
+				<a href="contact-us.html"><img src="HP/left-arrow.png" id="forward"></a>  <!--Adds the forward arrow-->
+            </div>
+
+
+            
+            <script src="Javascript/Search.js"></script>  <!-- LINKS TO JAVASCRIPT FILE WHICH CONTAINS CODE THAT USERS TO DIFFERENT PAGE BASED ON THE SEARCH BOX INPUT-->
+
+                
+              
+            
+        </section>
+        <!--............................................................ -->
+
+
+
+
+	
+    
+	<h1 class="contactUs">Contact Us:</h1> <!--Adds header "Contact Us"-->
+
+    
+    
+    <div class="email-container"> <!--Collects the elements on emain detail such as image and heading-->
+	    <img src="SM/email.png"  id="emailIcon" /> <!--Adds email icon-->
+	    <h2 class="emailName">YasmeenCooking28@gmail.com</h2> <!--Adds email name-->
+    </div>
+	
+
+    <div class="message-container"> <!--Collects the elements on message detail such as image and heading-->
+        <img src="SM/Message.png"  id="messageIcon"/>  <!--Adds the Message icon-->
+        <h2 class="messageName">07368541080</h2> <!--Adds phone number-->
+    </div>
+
+    <div class="insta-container"> <!--Collects the elements on Instagram detail such as image and heading-->
+        <a href="https://www.instagram.com/yasmeencooking28/" ><img src="SM/insta.jpg"  id="instaIcon"> </a> <!--Adds the Instagram icon which is linked to the profile-->
+        <h2 class="instaName">YasmeenCooking</h2> <!--Adds Instagram name-->
+    </div>
+
+	<p class="infoContact">If you are struggling or have any inqueries about the foods, then contact us. The contact details is shown above</p> <!--Adds sentence about the contact us page-->
+
+    <div id="slideshow-container"> <!--Collects 3 images that will be included in slide show-->
+        <img src="FOODS/macarone.jpg"> <!--Adds image 1-->
+        <img src="FOODS/rice.jpg"> <!--Adds image 2-->
+        <img src="FOODS/roast.jpg"> <!--Adds image 3-->
+    </div>
+
+
+    <script src="Javascript/Slideshow.js"></script> <!--LINKS TO JAVASCRIPT FILE THAT ADDS AUTOMATIC SLIDESHOW BY USING "slideshow-container" DIV CLASS IMAGES-->
+    
+
+
+
+
+   <!-- Uses "footer" tag to add a footer in the website -->
+	<footer>
+        <div class="footer-elements"> <!-- Collects all the element that creates a footer -->
+            <h3>Yasmeen Cooking</h3> <!-- Adds a header "Yasmeen Cooking" -->
+            <p>Copyright &copy; 2023 Yasmeen Cooking. All rights reserved</p> <!-- &copy creates a copyright symbol -->
+            <p>YasmeenCooking28@Gmail.com</p> <!-- Uses P tag to add a email -->
+            <p>07368541080</p> <!-- Uses P tag to add an mobile number -->
+        </div>   
+    </footer>
+
+
+
+
+    <!--CSS-->
+    <!-- Styles the contact-us page -->
+    <style>
+
+    /* Styles the back icon by linking to ID back */
+    #back{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 201.01px; /* Width of "116" (PIXELS)*/
+        height: 91px; /* Height of "91" (PIXELS)*/
+        left: 108.88px; /*Position  left of the back icon  "108.88" (PIXELS) */
+        top: 180.29px; /*Position  top of the back icon  "180.29" (PIXELS) */
+        transform: rotate(-179.84deg); /*Rotates the back icon to -179.84 degrees */
+    }
+
+
+    /* Styles the foraward icon by linking to ID forward */
+    #forward{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 232px; /* Width of "232" (PIXELS)*/
+        height: 91px; /* Height of "91" (PIXELS)*/
+        left: 1017.31px; /*Position  left of the back icon  "1017.31" (PIXELS) */
+        top: 184.21px; /*Position  top of the back icon  "180.29" (PIXELS) */
+        transform: rotate(179.61deg); /*Rotates the back icon to -179.61 degrees */
+
+    }
+
+    /* Styles the Header "Contact Us" by linking to class contactUs */
+    .contactUs{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 259px; /* Width of "259" (PIXELS)*/
+        height: 48px; /* Height of "48" (PIXELS)*/
+        left: 508px; /*Position  left of the header  "508" (PIXELS) */
+        top: 310px; /*Position  top of the header "310" (PIXELS) */
+    }
+
+    .email-container img{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 220px; /* Width of "220" (PIXELS)*/
+        height: 229px; /* Height of "229" (PIXELS)*/
+        left: 51px; /*Position  left of the icon  "51" (PIXELS) */
+        top: 392px; /*Position  top of the icon "392" (PIXELS) */
+    }
+
+
+    /* Styles the email icon by linking to ID emailIcon */
+
+
+    /* Styles the email name by linking to class emailName */
+    .email-container h2{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 285px; /* Width of "285" (PIXELS)*/
+        height: 24px; /* Height of "24" (PIXELS)*/
+        left: 51px; /*Position  left of the email name  "51" (PIXELS) */
+        top: 655px; /*Position  top of the email name "655" (PIXELS) */
+    }
+
+
+
+    /* Styles the message icon by linking to ID messageIcon */
+    #messageIcon{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 225px; /* Width of "225" (PIXELS)*/
+        height: 225px; /* Height of "225" (PIXELS)*/
+        left: 525px; /*Position  left of the icon  "525" (PIXELS) */
+        top: 396px;  /*Position  top of the icon "396" (PIXELS) */
+    }
+
+    /* Styles the message name by linking to class messageName */
+    .messageName{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 165px; /* Width of "165" (PIXELS)*/
+        height: 24px; /* Height of "24" (PIXELS)*/
+        left: 560px; /*Position  left of the message name  "560" (PIXELS) */
+        top: 655px; /*Position  top of the message name "655" (PIXELS) */
+    }
+
+
+
+    /* Styles the Instagram icon by linking to ID instaIcon */
+    #instaIcon{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 225px; /* Width of "225" (PIXELS)*/
+        height: 225px; /* Height of "225" (PIXELS)*/
+        left: 925px; /*Position  left of the icon  "925" (PIXELS) */
+        top: 396px; /*Position  top of the icon "396" (PIXELS) */
+    }
+
+
+    /* Styles the Instagram name by linking to class instaName */
+    .instaName{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 177px; /* Width of "177" (PIXELS)*/
+        height: 24px; /* Height of "24" (PIXELS)*/
+        left: 967px; /*Position  left of the Instagram name  "967" (PIXELS) */
+        top: 660px; /*Position  top of the Instagram name "660" (PIXELS) */
+    }
+
+
+    /* Styles the paragraph by linking to class infoContact */
+    .infoContact{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 1100px; /* Width of "1100" (PIXELS)*/
+        height: 24px; /* Height of "24" (PIXELS)*/
+        left: 87px; /*Position  left of the paragraph  "87" (PIXELS) */
+        top: 809px; /*Position  top of the Instagram name "809" (PIXELS) */
+        font-size: 65px; /*Size of the text "25" (PIXELS) */ 
+    }
+
+
+
+    /*Styles the height and width and position of the slide show box*/
+    #slideshow-container {
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 100%; /* Width of 100% */
+        height: 400px; /* Height of "400" (PIXELS)*/
+        top:1100px; /*Position  top of the slideshow box  "1100" (PIXELS) */
+        left:80px /*Position  left of the slidshow box  "80" (PIXELS) */
+    }
+
+
+    /*Styles the height and width and position of the images inside the slide show box*/
+    #slideshow-container img {
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        top: 0; /*Position  top of the image inside the slideshow box  "0"  */
+        left: 0; /*Position  left of the image inside the slideshow box  "0"  */
+        width: 50%; /* Width of 50% */
+        height: 789px; /* Height of 789 (PIXELS) */
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+
+    /*Selects the first image (first-child)*/
+    #slideshow-container img:first-child {
+        opacity: 1; /*Makes the first image visible*/
+    }
+
+
+    </style>
+
+
+</body>
+</html>
+

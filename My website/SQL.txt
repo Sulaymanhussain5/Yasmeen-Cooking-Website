@@ -1,0 +1,37 @@
+--------------SQL CODE FOR CREATING DATABASE AND TABLE IN ORDER PAGE (roast,rice and macarone) ----------------------------------------
+create database order_page;
+
+create table items (id int AUTO_INCREMENT PRIMARY KEY, stock int (50), itemname varchar (50) ); 
+
+insert into items (id, stock, itemname) values (1, 6, 'roast chicken');
+insert into items (id, stock, itemname) values (2, 6, 'rice');
+insert into items (id, stock, itemname) values (3, 6, 'macarone')
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------SQL CODE FOR UPDATING COLUMN VALUE "stock" IN ITEMS TABLE FOR rice ----------------------------------------
+use order_page;
+
+UPDATE items
+SET stock = 6
+WHERE id = 2;
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+--------------SQL CODE FOR CREATING DATABASE AND TABLE IN FORMS (login and sign-up) ----------------------------------------
+create database account_form;
+
+create table users(id int AUTO_INCREMENT PRIMARY KEY, name varchar (50), email varchar (100), username varchar (50), password varchar (15) );
+create table existing_users(id int AUTO_INCREMENT PRIMARY KEY, username varchar (50), password varchar (15) );  
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+

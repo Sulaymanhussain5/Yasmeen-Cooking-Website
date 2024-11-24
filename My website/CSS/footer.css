@@ -1,0 +1,42 @@
+/* Universal Selector which styles all elements */
+*{
+    margin:0; /* Margin of the elemtns is 0 */
+    padding:0; /* Padding of the elements is 0 */
+    box-sizing: border-box; /* It takes note of the width and height that i apply for padding and margins */
+}
+
+
+/* Styles the homepage, which is used by body */
+body{
+    background: white; /* Background colour of the homepage */
+}
+
+
+/* Links to the tag "Footer" */
+footer{
+    position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+    background: black; /* Background colour of the footer */
+    height:150px; /* Height of the footer "150" (PIXELS)*/
+	width: 1480px; /* Width of the footer "1480" (PIXELS)*/
+    top:2100px; /* Moves the footer elements down (higher px, the lower the element moves)*/
+    font-family: "Open Sans"; /* Used "Open Sans" font for all the texts in the footer*/
+    padding-top: 40px; /* Gives space between the footer by top (40px)*/
+    color: white; /* Colour of the text inside the footer*/
+}
+
+/* Styles "Yasmeen Cooking" which is linked to html file*/
+.footer-elements h3{
+    text-align: center; /* Aligns "Yasmeen Cooking" heading to the center of the footer*/
+}
+
+
+
+/* Styles Copyrights and contact details  which is linked to html file*/
+.footer-elements p{
+    text-align: center; /* Aligns Copyrights and contact details heading to the center of the footer*/
+}
+
+
+
+
+

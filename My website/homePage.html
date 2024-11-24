@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/header.css">  <!--Links to CSS file named header.css, which creates a header-->
+    <link rel="stylesheet" href="CSS/footer.css"> <!--Links to CSS file named footer.css, which creates a footer--> 
+    <meta charset="UTF-8"> <!-- display characters from several languages accurately since the character encoding has been set to UTF-8.--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this code helps by making sure the website is shown accurately and ideally on various devices, with the necessary scaling and sizing.-->
+    <title>HomePage</title> <!--This title will appear in the task bar("HomePage")-->
+</head>
+
+
+<body>
+    
+
+	<!--It uses SECTION to organise and display the header code-->
+        <!--............................................................ -->
+        <section>
+            <div class="navigation-bar">   <!--This collects all the elements that will be included in the header -->
+                <a href="homePage.html"> <img src="LOGO/logo.jpg" id="yasmeen-cooking-logo"> </a> <!--Adds the logo -->
+                <a class="contact-us" href="contact-us.html">ContactUs</a> <!--Adds Contact Us Navigation button -->
+                <a class="foods" href="foods.html">Foods</a>  <!--Adds Foods Navigation button -->
+				<a href="login.php"> <img src="HP/account.png" id="account"></a>  <!--Adds the account icon-->
+            </div>
+                
+
+            <!-- THIS SECTION INSERT THE SEARCH BOX <-->
+            <div class="search"> <!--Collects all the elements that creates search box-->
+                <input type="search" id= "searchBox" onchange="openPage()"  placeholder="Search.." > <!--Adds search box. Also use "oncharge" to perform action when string is inserted-->
+                <a href="homePage.html"> <img src="HP/right-arrow.png" id="back"></a>  <!--Adds the back arrow-->
+				<a href="contact-us.html"><img src="HP/left-arrow.png" id="forward"></a>  <!--Adds the forward arrow-->
+            </div>
+
+            <script src="Javascript/Search.js"></script> <!-- LINKS TO JAVASCRIPT FILE WHICH CONTAINS CODE THAT USERS TO DIFFERENT PAGE BASED ON THE SEARCH BOX INPUT-->
+                
+              
+            
+        </section>
+        <!--............................................................ -->
+
+      
+    
+		<!--This adds the interactive image which allows the user to see hidden message when pointer lands on the image-->
+		<!--..........................................................................-->
+		<section>
+			<script type="text/Javascript" src="Javascript/home.js"></script><!--Links to the JAVASCRRIPT folder-->
+			<img  id="logoSlide" onmouseover="newImageOne()"onmouseout="oldImageOne()" src="HP/logo-slide.png" />	<!--Links to JAVASCRIPT, which allows users to see hidden message when pointer is landed on the image-->
+		</section>
+		<!--..........................................................................-->
+
+
+
+        <!--JAVASCRIPT-->
+        <!-- Uses Javascript to change images when pointer lands on the Yasmeen Cooking logo and displays the message "WELCOME TO YASMEEN COOKING" <-->
+        <script>
+                //Uses Javascript to pop up the word "WELCOME TO YASMEEN COOKING" when image is pointed in logo box//
+                function newImageOne()//Refers to onmouseover 
+            {
+                document.getElementById("logoSlide").src="HP/welcome.png"; //It gets the document in the img ID (logoSlide) and links it to image
+            }
+
+                function oldImageOne() //Refers to onmouseout
+                {
+                    document.getElementById("logoSlide").src="HP/logo-slide.png"; //It gets the document in the img ID (logoSlide) and limks it to image
+                }
+        </script>
+
+
+    
+
+
+
+    <!--ABOUT YASMEEN PAGE-->
+    <!--..........................................................................-->
+    <h1 class="aboutUs">About Yasmeen Cooking</h1> <!--Adds a heading-->
+
+	<img src="LOGO/logo.jpg" id="yasmeen-cooking-logo2"> <!--Logo next to the text-->
+
+	<P class="aboutYasmeenCooking">Yasmeen Cooking bring together two generations of cooking methods, both traditional and modern takes on, but not limited to South Asian foods.
+        With recipes passed down from her late mother Asifa Yasmeen, Asma Noreen also uses her own unique take on already established methods of cooking
+        </P> <!--paragraph explaining about Yasmeen Cooking-->
+    <!--..........................................................................-->
+
+
+	
+	<!--Bellow the about us section, there will be another interactive image and a food banner-->
+	<section>
+		<img src="added-foods-banner.png" id="added-foods-banner"> <!--Food banner-->
+		<a href="foods.html"><img  id="shop-foods-img" onmouseover="after()"onmouseout="before()" src="HP/shop-foods.png" /></a> <!--Links to the JAVASCRRIPT folder, which allows users to see the hidden message when pointer is landed on the image-->
+	</section>
+
+
+    <!--JAVASCRIPT-->
+    <!--Uses Javascript to pop up the word "Power of cooking" when image is pointed in shop foods image -->
+    <script>
+
+        function after()//Refers to onmouseover 
+        {
+            document.getElementById("shop-foods-img").src="HP/slogan-homepage.png"; //It gets the document in the img ID (shop-foods-img) and links it to image
+        }
+
+            function before() //Refers to onmouseout
+            {
+                document.getElementById("shop-foods-img").src="HP/shop-foods.png"; //It gets the document in the img ID (shop-foods-img) and limks it to image
+            }
+    </script>
+
+
+
+
+
+
+    <!-- Uses "footer" tag to add a footer in the website -->
+	<footer>
+        <div class="footer-elements"> <!-- Collects all the element that creates a footer -->
+            <h3>Yasmeen Cooking</h3> <!-- Adds a header "Yasmeen Cooking" -->
+            <p>Copyright &copy; 2023 Yasmeen Cooking. All rights reserved</p> <!-- &copy creates a copyright symbol -->
+            <p>YasmeenCooking28@Gmail.com</p> <!-- Uses P tag to add a email -->
+            <p>07368541080</p> <!-- Uses P tag to add an mobile number -->
+        </div>   
+    </footer>
+
+
+
+
+
+
+    <!--CSS-->
+    <!-- Styles the homepage <-->
+    <style>
+        /* Universal Selector which styles all elements */
+        * {
+        box-sizing: border-box; /* It takes note of the width and height */
+        }
+    
+        /* Style the search field */
+        form.example input[type=text] { /* Refers to input box for search box */
+        padding: 10px; /* Padding of the elemtns is 10px */
+        font-size: 17px; /* Increases font text size to 17px */
+        border: 1px solid grey; /* log in input border box grey */ 
+        float: left; /*Floats the element to the left */
+        width: 30%; /*width of the input box by 30%*/
+        background: #f1f1f1; /*Background colour of input box "grey" */
+        }
+
+
+        /* Styles the back icon by linking to ID back */
+    #back{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 201.01px; /* Width of "116" (PIXELS)*/
+        height: 91px; /* Height of "91" (PIXELS)*/
+        left: 108.88px; /*Position  left of the back icon  "108.88" (PIXELS) */
+        top: 180.29px; /*Position  top of the back icon  "180.29" (PIXELS) */
+        transform: rotate(-179.84deg); /*Rotates the back icon to -179.84 degrees */
+    }
+
+
+    /* Styles the foraward icon by linking to ID forward */
+    #forward{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 232px; /* Width of "232" (PIXELS)*/
+        height: 91px; /* Height of "91" (PIXELS)*/
+        left: 1017.31px; /*Position  left of the back icon  "1017.31" (PIXELS) */
+        top: 184.21px; /*Position  top of the back icon  "180.29" (PIXELS) */
+        transform: rotate(179.61deg); /*Rotates the back icon to -179.61 degrees */
+
+    }
+
+
+
+    /* Styles the Yasmeen Cooking Logo, which is in the blue box by linking to ID logoSlide */
+    #logoSlide{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 843px; /* Width of "843" (PIXELS)*/
+        height: 248px; /* Height of "248" (PIXELS)*/
+        left: 210px; /*Position  left of the logo slide "210" (PIXELS) */
+        top: 288px; /*Position  top of the logo slide  "288" (PIXELS) */
+
+    }
+
+
+
+
+
+    /* Styles the heading "about us" by linking to heading class "about us" */
+    .aboutUs{
+        position: absolute;  /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 852px; /* Width of "852" (PIXELS)*/
+        height: 121px; /* Height of "121" (PIXELS)*/
+        left: 247px; /*Position  left of the logo slide "247" (PIXELS) */
+        top: 674px; /*Position  top of the logo slide  "674" (PIXELS) */
+        font-size: 40px; /*Size of the text "40" (PIXELS) */
+        font-family: Tahoma,Serif; /*Font text of "about us" is Tahoma, serif*/
+    }
+
+
+    /* Styles the paragraph by linking to paragraph class "aboutYasmeenCooking" */
+    .aboutYasmeenCooking{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 726px; /* Width of "726" (PIXELS)*/
+        height: 195px; /* Height of "195" (PIXELS)*/
+        left: 76px; /*Position  left of the paragraph "76" (PIXELS) */
+        top: 788px; /*Position  top of the paragraph  "788" (PIXELS) */
+        font-size: 32px; /*Size of the text "37" (PIXELS) */
+        font-family: Tahoma,Serif; /*Paragraph font is Tahoma, serif*/
+        
+    }
+
+
+
+    /* Styles Yasmeen Cooking logo in the side of about us paragraph class "yasmeen-cooking-logo2" */
+    #yasmeen-cooking-logo2{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 618px; /* Width of "618" (PIXELS)*/
+        height: 53px; /* Height of "53" (PIXELS)*/
+        left: 804px; /*Position  left of the logo "804" (PIXELS) */
+        top: 844px; /*Position  top of the logo  "844" (PIXELS) */
+        font-weight: 400; /*Weight of the image */
+        font-size: 40px; /*Size of the text "40" (PIXELS) */
+        line-height: 53px; /*Sets the image between the text by 53 (PIXELS) */
+    }
+
+
+    /* Styles image */
+    #shop-foods-img{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 1043px; /* Width of "1043" (PIXELS)*/
+        height: 448px; /* Height of "448" (PIXELS)*/
+        left: 80px; /*Position  left of the image "80" (PIXELS) */
+        top: 1088px; /*Position  top of the image  "1088" (PIXELS) */
+    }
+
+
+    /* Styles food banner */
+    #added-foods-banner{
+        position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+        width: 1043px; /* Width of "1043" (PIXELS)*/
+        height: 448px; /* Height of "448" (PIXELS)*/
+        left: 80px; /*Position  left of the banner "80" (PIXELS) */
+        top:1640px; /*Position  top of the banner  "1640" (PIXELS) */
+    }
+
+
+    </style>
+
+
+
+</body>
+</html>
+
+
+
+

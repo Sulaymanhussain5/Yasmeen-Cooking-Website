@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="CSS/header.css"> <!--Links to CSS file named header.css, which creates a header-->
+	<link rel="stylesheet" href="CSS/footer.css"> <!--Links to CSS file named footer.css, which creates a footer-->
+    <meta charset="UTF-8"> <!-- display characters from several languages accurately since the character encoding has been set to UTF-8.--> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this code helps by making sure the website is shown accurately and ideally on various devices, with the necessary scaling and sizing.-->
+    <title>Foods</title> <!--This title will appear in the task bar("Foods")-->
+</head>
+
+
+<body>
+
+	<!--It uses SECTION to organise and display the header code-->
+        <!--............................................................ -->
+        <section>
+            <div class="navigation-bar">   <!--This collects all the elements that will be included in the header -->
+                <a href="homePage.html"> <img src="LOGO/logo.jpg" id="yasmeen-cooking-logo"> </a> <!--Adds the logo -->
+                <a class="contact-us" href="contact-us.html">ContactUs</a> <!--Adds Contact Us Navigation button -->
+                <a class="foods" href="foods.html">Foods</a>  <!--Adds Foods Navigation button -->
+				<a href="login.php"> <img src="HP/account.png" id="account"></a>  <!--Adds the account icon-->
+            </div>
+                
+
+            <!-- THIS SECTION INSERT THE SEARCH BOX -->
+            <div class="search"> <!--Collects all the elements that creates search box-->
+                <input type="search" id= "searchBox" onchange="openPage()" value="" placeholder="Search.." > <!--Adds search box. Also use "oncharge" to perform action when string is inserted-->
+                <a href="homePage.html"> <img src="HP/right-arrow.png" id="back"></a>  <!--Adds the back arrow-->
+				<a href="contact-us.html"><img src="HP/left-arrow.png" id="forward"></a>  <!--Adds the forward arrow-->
+            </div>
+        
+            
+            <script src="Javascript/Search.js"></script>  <!-- LINKS TO JAVASCRIPT FILE WHICH CONTAINS CODE THAT USERS TO DIFFERENT PAGE BASED ON THE SEARCH BOX INPUT-->
+
+        </section>
+        <!--............................................................ -->
+
+
+
+
+	<hr id="line"> <!--Adds a line, with ID "line"-->
+
+	<img src="shop-foods.png" id="foodsBanner" /> <!--Adds a banner in the food page-->
+
+	
+    
+    
+    <div class="roast-container"><!--Collects elements on information about roast which includes grid box, header and images which are hyperlinked-->
+        <div class="grid-item-1"><!--Adds grid box-->
+            <a href="roast-order-page.php"> <!--Links the text to roast-order-page-->
+            <img src="FOODS/roast.jpg" height="191" width="269" id="roastFood" />  <!--Image of roast chicken with ID of roastFood-->
+            <h2>Roast Chicken <br> 10.00GBP</h2> <!--Adds  text which is the name of the food "Roast" and price "10.00GBP"-->
+	        </a>
+        </div>
+    </div>
+
+
+    
+    <div class="rice-container"><!--Collects elements on information about rice which includes grid box, header and images which are hyperlinked-->
+        <div class="grid-item-2"><!--Adds grid box-->
+            <a href="rice-order-page.php"> <!--Links the text to rice-order-page-->
+            <img src="FOODS/rice.jpg" height="191" width="269"  id="riceFood"/> <!--Image of roast chicken with ID of riceFood-->
+            <h2>Brown Rice <br> 10.00GBP</h2> <!--Adds  text which is the name of the food "Rice" and price "10.00GBP"-->
+	        </a>
+        </div>
+    </div>
+
+    
+    
+    <div class="macarone-container"><!--Collects elements on information about macarone which includes grid box, header and images which are hyperlinked-->
+        <div class="grid-item-3"><!--Adds grid box-->
+            <a href="macarone-order-page.php"> <!--Links the text to macarone-order-page-->
+            <img src="FOODS/macarone.jpg" height="191" width="269"  id="macaroneFood"/> <!--Image of macarone with ID of macaroneFood-->
+            <h2>Macarone <br> 10.00GBP</h2> <!--Adds  text which is the name of the food "Macarone" and price "10.00GBP"-->
+	        </a>
+        </div>
+    </div>
+
+
+
+
+
+
+	   <!-- Uses "footer" tag to add a footer in the website <-->
+    <footer>
+        <div class="footer-elements"> <!-- Collects all the element that creates a footer<-->
+            <h3>Yasmeen Cooking</h3> <!-- Adds a header "Yasmeen Cooking" <-->
+            <p>Copyright &copy; 2023 Yasmeen Cooking. All rights reserved</p> <!-- &copy creates a copyright symbol <-->
+            <p>YasmeenCooking28@Gmail.com</p> <!-- Uses P tag to add a email <-->
+            <p>07368541080</p> <!-- Uses P tag to add an mobile number <-->
+        </div>   
+    </footer>
+
+
+
+    <!--CSS-->
+    <!-- Styles the order page <-->
+    <style>
+
+   
+        /* Styles the food page banner by linking to ID foodsBanner */
+        #foodsBanner{
+            position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+            width: 1439px; /* Width of "1439" (PIXELS)*/
+            height: 340px; /* Height of "340" (PIXELS)*/
+            left: 14px; /*Position  left of the food banner  "14" (PIXELS) */
+            top: 289px; /*Position  top of the food banner  "289" (PIXELS) */
+
+        }
+
+
+
+         /*Styles  roast container header 2*/
+        .roast-container h2{
+            color:black; /*Colour of the header*/
+        }
+
+        
+
+         /*Styles the hyperlink of the heading 2*/
+        .roast-container a{
+            text-decoration: none; /*Removes the hyperlink line*/
+        }
+        
+
+        /*Styles the colour when the pointer lands on the text*/
+        .roast-container a h2:hover{
+            color:red; /*Colour red when pointer lands on the text*/
+        }
+
+        /*Styles the grid box for roast container*/
+        .grid-item-1{
+            position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+            top:750px; /*Position  top of the grid box  "750" (PIXELS) */
+            width:305px; /* Width of "305" (PIXELS)*/
+            height:295px; /* Height of "295" (PIXELS)*/
+            background-color: white; /* Colour of the box*/
+            padding: 20px; /* Adds 20 (PIXELS) of space   */
+            border:none; /*By adding none in my border it  disapears the border in the grid  box, however it allows me to add my chosen color to the log in input box */
+		    border:1px solid black; /*log in input border box black */
+		    border-radius: 6px; /*Adds a round shape rectangle inside the grid box */
+        }
+
+       
+        /*Styles  rice container header 2*/
+        .rice-container h2{
+            color:black;  /*Colour of the header*/
+        }
+
+        
+
+        /*Styles the hyperlink of the heading 2*/
+        .rice-container a{
+            text-decoration: none; /*Removes the hyperlink line*/
+        }
+        
+        /*Styles the colour when the pointer lands on the text*/
+        .rice-container a h2:hover{
+            color:red; /*Colour red when pointer lands on the text*/
+        }
+        
+
+         /*Styles the grid box for rice container*/
+        .grid-item-2{
+            position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+            top:750px; /*Position  top of the grid box  "750" (PIXELS) */
+            left:500px; /*Position  left of the grid box  "500" (PIXELS) */
+            width:305px; /* Width of "305" (PIXELS)*/
+            height:295px; /* Height of "295" (PIXELS)*/
+            background-color: white; /* Colour of the box*/
+            padding: 20px; /* Adds 20 (PIXELS) of space   */
+            border:none; /*By adding none in my border it  disapears the border in the grid box, however it allows me to add my chosen color to the log in input box */
+		    border:1px solid black; /*grid box border  black */
+		    border-radius: 6px; /*Adds a round shape rectangle inside the grid box */
+        }
+
+
+      
+
+        /*Styles  macarone container header 2*/
+        .macarone-container h2{
+            color:black; /*Colour of the header*/
+        }
+
+        
+
+        /*Styles the hyperlink of the heading 2*/
+        .macarone-container a{
+            text-decoration: none; /*Removes the hyperlink line*/
+        }
+        
+
+        /*Styles the colour when the pointer lands on the text*/
+        .macarone-container a h2:hover{
+            color:red; /*Colour red when pointer lands on the text*/
+        }
+    
+        /*Styles the grid box for macarone container*/
+        .grid-item-3{
+            position: absolute; /* Position: "Absolute" allows me to take advantage on the position of the elements  */
+            top:750px; /*Position  top of the grid box  "750" (PIXELS) */
+            left:950px; /*Position  left of the grid box  "950" (PIXELS) */
+            width:305px; /* Width of "305" (PIXELS)*/
+            height:295px; /* Height of "305" (PIXELS)*/
+            background-color: white; /* Colour of the box*/
+            padding: 20px; /* Adds 20 (PIXELS) of space   */
+            border:none; /*By adding none in my border it  disapears the border in the log in input box, however it allows me to add my chosen color to the grid box */
+		    border:1px solid black; /*grid box border  black */
+		    border-radius: 6px; /*Adds a round shape rectangle inside the grid box */
+        }
+       
+    </style>
+
+
+
+
+</body>
+</html>
+
+
+
